@@ -136,7 +136,7 @@ microservices-project/
 - Each service uses its **own PostgreSQL database**.
 - Example configuration (`application.properties`):
 
-```properties
+``properties
 spring.datasource.url=jdbc:postgresql://localhost:5432/<service_db>
 spring.datasource.username=postgres
 spring.datasource.password=postgres
