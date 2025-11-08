@@ -46,8 +46,6 @@ All services are independent with their own database but communicate via **OpenF
 
 ---
 
-## Architecture
-
 ## Project Structure
 
 ```text
