@@ -48,40 +48,41 @@ All services are independent with their own database but communicate via **OpenF
 
 ## Architecture
 
+## Project Structure
+
+```text
 microservices-project/
-│
 ├── auth/
-│ ├── src/main/java/com/example/auth/
-│ │ ├── config/ # Security & RSA keys
-│ │ ├── controller/ # Login, refresh endpoints
-│ │ ├── entities/ # User, Rolle, LoginRequest
-│ │ ├── repository/ # UserRepo, RoleRepo
-│ │ ├── service/ # AuthService, UserDetailsServiceImpl
-│ │ └── AuthApplication.java
-│ └── resources/keys/
+│   ├── src/main/java/com/example/auth/
+│   │   ├── config/         # Security & RSA keys
+│   │   ├── controller/     # Login, refresh endpoints
+│   │   ├── entities/       # User, Rolle, LoginRequest
+│   │   ├── repository/     # UserRepo, RoleRepo
+│   │   ├── service/        # AuthService, UserDetailsServiceImpl
+│   │   └── AuthApplication.java
+│   └── resources/keys/
 │
 ├── student-service/
-│ ├── src/main/java/com/example/student/
-│ │ ├── configuration/ # Security & RSA keys
-│ │ ├── controller/ # StudentController
-│ │ ├── dto/ # FiliereDto, RequestDTO, ResponseDTO
-│ │ ├── entities/ # Student entity
-│ │ ├── interface/ # StudentService, Filiere
-│ │ ├── mapper/ # StudentMapper
-│ │ ├── repo/ # StudentRepo
-│ │ ├── service/ # StudentServiceImpl
-│ │ └── shared/ # Exception handlers & response classes
-│ └── resources/keys/
+│   ├── src/main/java/com/example/student/
+│   │   ├── configuration/  # Security & RSA keys
+│   │   ├── controller/     # StudentController
+│   │   ├── dto/            # FiliereDto, RequestDTO, ResponseDTO
+│   │   ├── entities/       # Student entity
+│   │   ├── interface/      # StudentService, Filiere
+│   │   ├── mapper/         # StudentMapper
+│   │   ├── repo/           # StudentRepo
+│   │   ├── service/        # StudentServiceImpl
+│   │   └── shared/         # Exception handlers & response classes
+│   └── resources/keys/
 │
 ├── filier-service/
-│ ├── src/main/java/com/example/filier/
-│ │ ├── controller/ # FilierController
-│ │ ├── entities/ # Filier entity
-│ │ ├── repository/ # FilierRepo
-│ │ ├── service/ # FilierServiceImpl
-│ │ └── FilierApplication.java
-│ └── resources/
-
+│   ├── src/main/java/com/example/filier/
+│   │   ├── controller/     # FilierController
+│   │   ├── entities/       # Filier entity
+│   │   ├── repository/     # FilierRepo
+│   │   ├── service/        # FilierServiceImpl
+│   │   └── FilierApplication.java
+│   └── resources/
 
 
 ---
